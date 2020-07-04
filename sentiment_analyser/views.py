@@ -5,3 +5,5 @@ from django.http import HttpResponse
 
 def home(request):
     return render(request,'sentiment_analyser/home.html')
+
+
