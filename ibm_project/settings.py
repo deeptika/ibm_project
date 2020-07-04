@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sentiment_analyser',
+    'crispy_forms',
+    'phone_field',
 ]
 
 MIDDLEWARE = [
@@ -120,4 +122,6 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
