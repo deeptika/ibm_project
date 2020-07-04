@@ -1,50 +1,6 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <!--
-<style>
-.accordion {
-background-color: black;
-color: yellow;
-
-padding: 18px;
-width: 50%;
-border: none;
-text-align: left;
-
-font-size: 15px;
-transition: 0.6s;
-}
-
-.active, .accordion:hover {
-background-color: black;
-color:red;
-width: 100%;
-}
-
-.panel {
-border-left: 10px;
-
-border-bottom: 10px;
-border-top: 10px;
-border-right: 10px;
-padding: 0 18px;
-display: none;
-border:  solid ;
-
-border-color:red;
-border-width: 1px;
-cursor: pointer;
-background-color: black;
-color:whitesmoke;
-overflow: hidden;
-border-left: 50px;
-width: 100%;
-align-content: center;
-}
-</style>
--->
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -56,13 +12,11 @@ align-content: center;
         <link href="{% static 'imbpage.css' %}" rel="stylesheet">> 
         <link href="{% static 'formstyle.css' %}" rel="stylesheet">> 
         <script src="{% static 'js/bootstrap.min.js' %}"></script>  
-        <!--<link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css">
-        <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="imbpage.css">
-        <link rel="stylesheet" href="formstyle.css">-->
 
         <title>Home</title>
+
     </head>
+
     <body class="bdy">
       <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +25,7 @@ align-content: center;
           <a class="navbar-brand" href="#team">RADR</a>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                  <a class="nav-item nav-link active" href="HOME.html">Home<span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link active" href="home.html">Home<span class="sr-only">(current)</span></a>
                   <a class="nav-item nav-link active" href="about.html">Product</a>
                   <a class="nav-item nav-link active" href="dashboard.html">Dashboard</a>
               </div>
@@ -87,30 +41,6 @@ align-content: center;
                 </div>
                 <br>
                 <br>
-                <!--
-<div class="col-sm-6">
-<br>
-<br>
-
-<br>
-<h3 class="h2-1">Applications which use sentiment Analysis</h3>
-<br>
-<article class="article-1">
-<ul>
-<li> Brand Monitoring</li>
-<li> Improving Your Customer Support</li>
-<li> Tracking Your Employees’ Feedback</li>
-<li> Providing Better Product Analytics</li>
-<li> Monitoring Market Research</li>
-<li>Keeping an Eye on Your Competition</li>
-<li>Tracking User Generated Content</li>
-<li> Uncovering Brand Influencers</li>
-<li> Social Media Monitoring</li>
-<li>Managing a Crisis Better</li>
-</ul>
-</article>
-</div>
--->
                 <div class="col-sm-4 ctrs" >
                     <br>
                     <br><br><br><br>
@@ -140,19 +70,11 @@ align-content: center;
                         <article style="text-align: left">Our services constantly evolve alongside us and always remain onpar with the latest technological discoveries.</article>
                     </div>
                 </div>
-                <!--
-<div class="col-sm-12">
-<div class="firstpara">
-<h2>RADR</h2>
-</div>
-</div>
--->
-
                 <div class="col-sm-6">
                     <div class="firstpara">
                         <article class="article-1">
                             <div class="img-1"><br><br><br><br><br>
-                                <img &emsp; src="ragimg2.png" class="img-fluid ";alt="Responsive image">
+                                <img &emsp; src = "{% static 'ragimg2.png' %}" class="img-fluid ";alt="Responsive image">
                             </div><br><br><br>
                             <br>
                         </article>
@@ -258,7 +180,7 @@ align-content: center;
                         <br>
                         <br>
                         <p><u><a href="#team">RADR</a></u> is a Student Project Initiative, for IBM Hack Challenege 2020 </p>
-                        <p class="h6">© All right Reversed.<a class="text-green ml-2" href="#team" target="_blank">RADR</a></p>
+                        <p class="h6">© All rights reserved.<a class="text-green ml-2" href="#team" target="_blank">RADR</a></p>
                     </div>
                     <hr>
                 </div>
