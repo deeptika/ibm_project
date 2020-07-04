@@ -1,9 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .forms import UserForm
 
 # Create your views here.
 
 def home(request):
-    return render(request,'sentiment_analyser/home.html')
+    user = UserForm()
+    return render(request,'sentiment_analyser/home.html', {'form':user})
+
 
 
