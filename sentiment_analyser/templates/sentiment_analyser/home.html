@@ -85,7 +85,7 @@
                         <br><br><br><br><br>
                         <form action="action_page.php">
                             {% csrf_token %}
-                            <h3 style="text-align:center";><b>To connect with us, register Here!</b></h3><br>
+                            <h3 style="text-align:center"><b>To connect with us, register Here!</b></h3><br>
                             <!--<label for="fname">First Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="First Name">
 
@@ -97,7 +97,8 @@
 
                             <label for="lname">Contact Number</label><br>
                             <input type="tel" id="phnum" name="phnum" placeholder="Phone Number">-->
-                            {{ form.as_p }}  
+                            {% load crispy_forms_tags %}
+                            {{ form|crispy }}  
                             <br><br>
 
                             <input type="submit" value="Submit">
