@@ -8,4 +8,4 @@ class UserForm(forms.ModelForm):
     contact_number = forms.RegexField(regex=r'^[6-9]\d{9}$')
     class Meta: 
         model = User
-        fields = "__all__"
+        fields = ['first_name', 'last_name', 'email', 'contact_number']
