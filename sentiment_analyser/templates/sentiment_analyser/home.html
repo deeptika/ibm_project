@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -18,26 +19,32 @@
     </head>
 
     <body class="bdy">
-        <p style="font-size: 25px; font-style: italic;">
+
+        <!-- Messages -->
+        <p style="font-size: 25px; font-style: italic; padding-left: 100px;">
             {% for message in messages %}
                 {{ message }}
             {% endfor %}
         </p>
-      <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#team">RADR</a>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                  <a class="nav-item nav-link active" href="home.html">Home<span class="sr-only">(current)</span></a>
-                  <a class="nav-item nav-link active" href="{% url 'form' %}">Register</a>
-                  <a class="nav-item nav-link active" href="about.html">Product</a>
-                  <a class="nav-item nav-link active" href="dashboard.html">Dashboard</a>
-              </div>
-          </div>
-      </nav>
-      <table>
+
+        <!-- Navigation bar-->
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#team">RADR</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="home.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{% url 'form' %}">Register</a>
+                    <a class="nav-item nav-link active" href="about.html">Product</a>
+                    <a class="nav-item nav-link active" href="dashboard.html">Dashboard</a>
+                </div>
+            </div>
+        </nav>
+
+        <table>
+
             <div class="row">
                 <div class="col-sm-12">
                     <div class="firstpara" id="video">
@@ -48,11 +55,9 @@
                 <br>
                 <br>
                 <div class="col-sm-4 ctrs" >
-                    <br>
-                    <br><br><br><br>
+                    <br><br><br><br><br>
                     <h3><b>About Us</b></h3>
-                    <br>
-                    <br>
+                    <br><br>
                     <div class="cts">
                         <article style="text-align: justify">We team of four made a machine learning predictive model for the sentiment analysis of twitter messages to predict the reaction of people towards the extension of lockdown.This project is made for the  IBM Hack Challenge 2020 hackathon.</article>
                     </div>
@@ -60,15 +65,15 @@
                 <div class="col-sm-4 ctrs">
                     <br><br><br><br><br>
                     <h3 class="h2-1">Our Goal</h3>
-                    <br><br><div class="cts">
-                    <article style="text-align: justify">
-                        We plan to develop a succecsul analytics model to help companies target the right audience and at the right time. We would help our partners and work constantly alongside them in improving the product reach.
-                    </article>
+                    <br><br>
+                    <div class="cts">
+                        <article style="text-align: justify">
+                            We plan to develop a succecsul analytics model to help companies target the right audience and at the right time. We would help our partners and work constantly alongside them in improving the product reach.
+                        </article>
                     </div>
                 </div>
-                <br>
-                <br>
-                <div class="col-sm-4 ctrs" >
+                <br><br>
+                <div class="col-sm-4 ctrs">
                     <br><br><br><br><br>
                     <h3><b>Always Updated</b></h3>
                     <br><br>
@@ -78,9 +83,8 @@
                 </div>
             </div>
 
-            <br>
+            <br><br>
 
-            <br>
             <div classs="faq">
                 <div class="col-12">
                     <div class="firstpara">
@@ -93,25 +97,28 @@
 
                         <button class="accordion"><b>Why Is Sentiment Analysis Important?</b></button>
                         <div class="panel">
-                            <p style="text-align:justify";>Sentiment analysis is extremely useful in social media monitoring as it allows us to gain an overview of the wider public opinion behind certain topics. ... The ability to extract insights from social data is a practice that is being widely adopted by organisations across the world.</p></div>
+                            <p style="text-align:justify";>Sentiment analysis is extremely useful in social media monitoring as it allows us to gain an overview of the wider public opinion behind certain topics. ... The ability to extract insights from social data is a practice that is being widely adopted by organisations across the world.</p>
+                        </div>
+                        
                         <button class="accordion"><b>What are the most popular application areas for sentiment analysis?</b></button>
                         <div class="panel">
                             <p style="text-align:justify";>The most common applications of natural language processing fall into three broad categories: Social Media Monitoring, Customer Experience Management and Voice of Customer, and People Analytics and Voice of Employee</p>
                         </div>
+                        
                         <button class="accordion"><b>What is a good sentiment score?</b></button>
-                        <div class="panel">
+                        <div class="panel>
                             <p style="text-align:justify";>The score indicates how negative or positive the overall text analyzed is. Anything below a score of -0.05 we tag as negative and anything above 0.05 we tag as positive. Anything in between inclusively, we tag as neutral.</p>
                         </div>
+                        
                         <button class="accordion"><b>How is accuracy calculated in sentiment analysis?</b></button>
                         <div class="panel">
                             <p style="text-align:justify";>We divide the dataset for training and test purposes into two parts ( sometimes it may be three also for validation). The accuracy can be checked by comparing annotated test records. However rather than using only accuracy rate F-measure, TP ( True Positive), FP (False Positive) will also help.</p>
                         </div>
+                        
                         <button class="accordion"><b>Is Sentiment analysis easy?</b></button>
                         <div class="panel">
                             <p style="text-align:justify";>Sentiment analysis is not an easy task to perform. Text data often comes pre-loaded with a lot of noise.Sentiment analysis can easily be misled by the presence of such sarcastic words and hence, sarcasm detection is a vital preprocessing step in many NLP tasks</p>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -132,13 +139,15 @@
                     });
                 }
             </script>
-            <br>
-            <br><br>
-            <br>
+
+            <br><br><br><br>
+
         </table>
+        
         <div class="fixed">
             <script async>(function(w, d) { w.CollectId = "5ef82910b5e80f329e9a4e9c"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
         </div>
+
         <!-- Footer -->
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -148,10 +157,9 @@
             <hr class="hr-r">
             <footer class="page-footer font-small blue footer">
                 <div class="fff">
-                    <!-- Copyright -->
+                <!-- Copyright -->
                     <div class="text-center text-white">
-                        <br>
-                        <br>
+                        <br><br>
                         <p><u><a href="#team">RADR</a></u> is a Student Project Initiative, for IBM Hack Challenege 2020 </p>
                         <p class="h6">© All rights reserved.<a class="text-green ml-2" href="#team" target="_blank">RADR</a></p>
                     </div>
