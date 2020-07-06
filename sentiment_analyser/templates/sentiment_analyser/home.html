@@ -7,10 +7,10 @@
         <!--Bootstrap CSS-->
         {% load static %}
         <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-        <link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet">> 
-        <link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet">>  
-        <link href="{% static 'imbpage.css' %}" rel="stylesheet">> 
-        <link href="{% static 'formstyle.css' %}" rel="stylesheet">> 
+        <link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet">  
+        <link href="{% static 'imbpage.css' %}" rel="stylesheet">
+        <link href="{% static 'formstyle.css' %}" rel="stylesheet">
         <script src="{% static 'js/bootstrap.min.js' %}"></script>  
 
         <title>Home</title>
@@ -18,6 +18,11 @@
     </head>
 
     <body class="bdy">
+        <p style="font-size: 25px; font-style: italic;">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </p>
       <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>

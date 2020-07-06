@@ -12,21 +12,21 @@
     <script src="{% static 'js/bootstrap.min.js' %}"></script>  
     <title>Registration</title>
 </head>
-<body style="align-items: center; display: flex;" class="bdy">
+<body style="align-items: center; display: flex; padding-left: 100px;" class="bdy">
     <div class="col-sm-6">
         <div class="firstpara">
             <article class="article-1">
-                <div class="img-1"><br><br><br><br><br>
+                <div class="img-1">
+                    <br><br>
                     <img &emsp; src = "{% static 'ragimg2.png' %}" class="img-fluid ";alt="Responsive image">
-                </div><br><br><br>
-                <br>
+                </div>
             </article>
         </div>
     </div>
 
     <div class="col-sm-6 colspec">
         <div class="container col-sm-12">
-            <h3 style="text-align:center; padding-top: 200px;"><b>To connect with us, register here!</b></h3><br>
+            <h3 style="text-align:center; padding-top: 100px;"><b>To connect with us, register here!</b></h3><br>
             <br><br><br>
                 {% load crispy_forms_tags %}
                 {% crispy form %}
