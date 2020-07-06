@@ -9,3 +9,5 @@ def home(request):
 def form(request):
     user = UserForm()
     return render(request, 'sentiment_analyser/form.html', {'form':user})
+ 
+
