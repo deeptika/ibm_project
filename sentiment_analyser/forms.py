@@ -19,6 +19,5 @@ class UserForm(forms.ModelForm):
         self.helper.form_id = 'id-UserForm'
         self.helper.form_class = 'blueForms'
         self.helper.form_method = 'post'
-        #self.helper.form_action = 'action_page.php'
         self.helper.add_input(Submit('submit', 'Submit'))
         self.helper.add_input(Submit('cancel', 'Cancel'))
