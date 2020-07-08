@@ -17,5 +17,8 @@ def form(request):
     else:
         form = UserForm()
     return render(request, 'sentiment_analyser/form.html', {'form':form})
+
+def about(request):
+    return render(request, 'sentiment_analyser/about.html')
              
 
