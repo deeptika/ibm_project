@@ -63,11 +63,11 @@
     color: black;
 
 }
-.faq{
-    border:5px solid;
-    border-color:skyblue;
 
+.faq{
+    border: 1px solid skyblue;
 }
+
 .article-1
 {
     text-align: justify-all;
