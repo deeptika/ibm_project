@@ -20,5 +20,8 @@ def form(request):
 
 def about(request):
     return render(request, 'sentiment_analyser/about.html')
+
+def dashboard(request):
+    return render(request, 'sentiment_analyser/dashboard.html')
              
 
