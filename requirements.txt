@@ -63,6 +63,7 @@ tzlocal==2.1
 urllib3==1.25.9
 virtualenv==16.7.9
 virtualenv-clone==0.5.3
+whitenoise==5.1.0
 wrapt==1.12.1
 xlrd==1.2.0
 xmltodict==0.12.0
