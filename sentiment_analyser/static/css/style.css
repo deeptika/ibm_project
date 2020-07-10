@@ -1,0 +1,198 @@
+html
+{
+    background-color:black;
+    color: whitesmoke;
+}
+.navbar-brand
+{
+    font-size: 30   px;
+}
+.navbar-nav
+{
+    text-align: left;
+    font-size: 18px;
+}
+.jumbotron
+{
+    background-color: black;
+    color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 0px;
+}
+
+.firstpara
+{
+    background-color: black;
+    color: whitesmoke;
+}
+.lead
+{
+    background-color: black;
+    color: whitesmoke;
+}
+.article-1
+{
+    text-align: justify;
+    font-size: 20px;
+}
+.col-12
+{
+    text-align: center;
+}
+.h2-1
+{
+    text-align: center;
+    color: antiquewhite;
+}
+.team
+{
+    color: #60666B;
+    text-align: center;
+}
+.h3-1
+{
+    color: grey;
+    text-align: center;
+    margin: auto;
+}
+.buttons
+{
+    text-align: center;
+    width: 250px;
+    margin: auto;
+}
+.img-1
+{
+    height: 350px;
+    width: 550px;
+    border-radius: 4px;
+}
+.img-2
+{
+    border-radius: 4px;
+}
+.img-3
+{
+    height: 200px;
+    width: 200px;
+    border: 1px dashed grey;
+    border-radius: 20%;
+}
+
+.article-2
+{
+    text-align: justify;
+}
+.mid
+{
+    margin: auto;
+}
+.art-1
+{
+    color: aliceblue;
+}
+.twitter
+{
+    background-image: url(sentiment.png);
+    width: 100%;
+    height: 250px;
+    border: 1px solid grey;
+    background-size: 100% 100%;
+}
+.hr-1
+{
+    background-color: gray;
+}
+.btnclr
+{
+    background-color: black;
+    color: #66a3ff;
+}
+
+.lik
+{
+    text-align: center;
+    color: aliceblue;
+}
+.bdyclr
+{
+    background-color: black;
+}
+.ftrclr
+{
+    background-color: white;
+}
+.container{
+    width: 100%;
+    padding: 20px;
+    margin: 100px auto;
+    background: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box{
+    width: 500px;
+    height: 250px;
+    background: #66a3ff;
+    margin: 0px 10px;
+    transition: 1s;
+
+}
+.box:hover{
+    transform: scale(1.3);
+    background: #0047b3;
+    color: aliceblue;
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
+
+}
+.containers{
+    width: 100%;
+    padding: 20px;
+    margin: 0px auto;
+    background: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.boxes{
+    width: 500px;
+    height: 500px;
+    background: #66a3ff;
+    margin: 0px 10px;
+    transition: 1s;
+
+}
+.boxes:hover{
+    transform: scale(1.3);
+    background: #0047b3;
+    color: aliceblue;
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
+}
+.dexter
+{
+    padding-left: 10px;
+}
+.ctrg
+{
+    text-align: center;
+    color: black;
+}
+.ctg
+{
+    color: black;
+}
+.dot
+{
+    justify-content: center;
+}
+
+.project-files-button {
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 20px;
+}
